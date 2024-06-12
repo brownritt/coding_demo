@@ -107,9 +107,70 @@ number_list.sum()
 
 #%% Flow control
 
+# For loops
+
+for k in range(10):
+    print(k)
+    
+for k in range(10):
+    print("I'm here")
+    print(k)
+    print("Now I'm here")
+
+for name in ['Jason','Alexa','Amaris']:
+    print(f'My name is {name}')
+    
+for name in ['Jason','Alexa','Amaris']:
+    print(r'My name is {name}')
+
+# while loops (look them up)
+
+# if elif else branching
+
+name = 'Jason'
+if name == 'Jason':
+    print('I am at the lecturn')
+elif name == 'Alexa':
+    print('I am in the back')
+else:
+    print('I do not know my name')
+
+# match-case lookup 
+
+# About vectorization
+# Try to get packages to do their own looping
+
+np.array([3,4,5]) + 10
 
 
 #%% Functions
+
+
+def z_score(x):
+    '''
+    Return the z-scored version of array x.
+    
+    Input: x is a 1D numpy array
+    
+    Returns array x with its mean subtracted
+    and divided by the standard deviation.
+    '''
+    return ( x - x.mean() ) / x.std()
+
+print("I'm running a mean unit test")
+x = np.array([-6,1,3,0,2,0,4.6])
+assert np.isclose( z_score(x).mean(), 0 )
+print("I passed the unit test")
+
+print("I'm running a std unit test")
+x = np.array([-6,1,3,0,2,0,4.6])
+assert np.isclose( z_score(x).std(), 1 )
+print("I passed the unit test")
+
+
+
+
+
 
 
 
