@@ -3,12 +3,27 @@
 """
 A collection of small code snippets that demonstrate
 some basic ideas in Python, mostly generalizable to 
-other languages
+other languages.
+
+It is unlikely this code will run straight through, as
+it is intended to demonstrate some common types of
+programming errors.
 
 Created on Wed Jun 12 10:27:50 2024
 
 @author: jritt
 """
+
+#%% Import block
+
+# In general it is best to put all imports at the top
+# of your code so it's easy to see all the dependencies
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
 
 #%% Bytes and bits
 
@@ -16,7 +31,6 @@ Created on Wed Jun 12 10:27:50 2024
 # A byte is 8 bits
 #    has 256 possible values
 
-import numpy as np
 
 #%% Data types
 
